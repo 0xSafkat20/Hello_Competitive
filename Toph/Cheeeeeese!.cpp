@@ -1,9 +1,8 @@
-//C. Accepted
+//Cheeeeeese!
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-cout<<"Accepted";
-return 0;
-
+    cout<<"Cheeeeeese!";
 }

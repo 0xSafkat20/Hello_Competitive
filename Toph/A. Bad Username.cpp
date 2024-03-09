@@ -15,7 +15,7 @@ int main()
             count++;
         }
         else{
-           return count;
+           ;
         }
 
     }
