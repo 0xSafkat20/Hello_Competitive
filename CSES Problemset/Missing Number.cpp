@@ -10,23 +10,19 @@ int main()
 {
     optimize();
 
-    long long int n;
+    long long  n,sum=0;
     cin>>n;
-    n=n-1;
-     int arr[n];
-    for(int i = 0 ; i < n ; i++ ){
-        cin>>arr[i];
+    vector<long long> v(n);
+    for(int i = 0 ; i < n-1; i++ )
+    {
+        cin>>v[i];
+        sum+=v[i];
     }
-    sort(arr,arr+n);
+        sort(v.begin(),v.end());
 
-    for(int i = 0 ; i < n ; i++ ){
-        if(arr[i]!=i+1){
-            cout<<i+1<<endl;
-            break;
-        }
-    }
+    long long total=(n)*(n+1)/2;
 
-
+    cout<<total-sum<<endl;
 
     return 0;
 
