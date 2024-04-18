@@ -1,5 +1,8 @@
-//Big Factorials
+//Opposite Task
+
+//
 //"Bismillah Rahman Rahim"
+//{
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -13,22 +16,37 @@ using ll = long long;
 
 #define pb    push_back
 #define sz(a) (int)a.size()
-
+//}
 int main()
 {
     optimize();
-    ll n,temp = 1;
-    cin>>n;
-    if(n==0){
-        cout<<"0000"<<endl;
-    }
-    else{
-       for(int i=1; i<=n; i++)
+    int t=1;
+    cin>>t;
+    for(int i=0; i<t; i++)
     {
-        temp*=i;
+        int n;
+        cin>>n;
+        if(n>10)
+        {
+            cout<<"10"<<" ";
+            cout<<n-10;
+            cout<<endl;
+        }
+        else
+        {
+            cout<<"0"<<" ";
+            cout<<n;
+            cout<<endl;
+        }
+
+
     }
-    cout<<temp%10000<<endl;
-    }
+
+
+
+
+
+
 
 
 
