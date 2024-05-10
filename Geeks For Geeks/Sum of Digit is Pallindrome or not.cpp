@@ -19,15 +19,34 @@ using ll = long long;
 int main()
 {
     optimize();
-int s;
-        cin>>s;
-        int p;
-        for(int i=0;i<s.length();i++){
-            p+=s[i];
-        }
-        cout<<p<<endl;
-        return 0;
-
-
-
+    string s,t,p;
+    cin>>s;
+    int c;
+    for(int i=0; i<s.size(); i++)
+    {
+        c+=s[i]-'0';
     }
+    p = to_string(c);
+
+    t=p;
+
+    reverse(t.begin(),t.end());
+
+    if(t==p)
+    {
+        cout<<'1'<<endl;
+    }
+    else
+    {
+        cout<<'0'<<endl;
+    }
+
+
+
+    //cout<<c<<endl;
+
+    return 0;
+
+
+
+}
