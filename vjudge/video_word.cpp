@@ -15,20 +15,16 @@ using ll = long long;
 #define pb    push_back
 #define sz(a) (int)a.size()
 //}
-
 int main()
 {
     optimize();
-    ll t;
-    cin >> t;
-    while (t--)
+    ll t=1;
+    cin>>t;
+    while(t--)
     {
-        ll n, k;
-        cin >> n >> k;
-        ll splite = n / (k + 1);
-        ll total = splite * k;
-        ll amount = n - total;
-        cout << amount << endl;
+        ll x,y,z;
+        cin>>x>>y>>z;
+        cout<<((x*y)<=(z*24*60)?"Yes":"No")<<endl;
     }
     return 0;
 }

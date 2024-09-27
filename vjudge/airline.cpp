@@ -15,20 +15,32 @@ using ll = long long;
 #define pb    push_back
 #define sz(a) (int)a.size()
 //}
-
 int main()
 {
     optimize();
-    ll t;
-    cin >> t;
-    while (t--)
+    ll t=1;
+    cin>>t;
+    while(t--)
     {
-        ll n, k;
-        cin >> n >> k;
-        ll splite = n / (k + 1);
-        ll total = splite * k;
-        ll amount = n - total;
-        cout << amount << endl;
+
+        ll x,n;
+        cin>>x>>n;
+
+        if(x>n/100)
+        {
+            cout<<"0"<<endl;
+        }
+        else
+        {
+            if(n%100!=0)
+            {
+                cout<<abs((n/100)-x)+1<<endl;
+            }
+            else
+            {
+                cout<<abs(x-(n/100))<<endl;
+            }
+        }
     }
     return 0;
 }

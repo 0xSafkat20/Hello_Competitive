@@ -1,4 +1,4 @@
-//
+//Permutations
 //"Bismillah Rahman Rahim"
 //{
 #include<bits/stdc++.h>
@@ -15,20 +15,33 @@ using ll = long long;
 #define pb    push_back
 #define sz(a) (int)a.size()
 //}
-
 int main()
 {
     optimize();
-    ll t;
-    cin >> t;
-    while (t--)
+    ll n;
+    cin>>n;
+    if(n==2 || n==3)
     {
-        ll n, k;
-        cin >> n >> k;
-        ll splite = n / (k + 1);
-        ll total = splite * k;
-        ll amount = n - total;
-        cout << amount << endl;
+        cout<<"NO SOLUTION"<<endl;
     }
+    else
+    {
+        for(ll i=n; i>0; i--)
+        {
+            if(i%2!=0)
+            {
+                cout<<i<<" ";
+            }
+        }
+        for(ll i=n; i>0; i--)
+        {
+            if(i%2==0)
+            {
+                cout<<i<<" ";
+            }
+        }
+
+    }
+
     return 0;
 }
