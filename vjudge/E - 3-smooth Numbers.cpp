@@ -21,7 +21,6 @@ int main()
     optimize();
     ll n,count=0;
     cin>>n;
-
         while(n%3==0){
             n/=3;
         }

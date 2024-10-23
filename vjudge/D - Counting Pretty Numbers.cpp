@@ -25,19 +25,15 @@ int main()
     {
         ll l,r,count=0;
         cin>>l>>r;
-            for(ll i=l; i<=r; i++)
+        for(ll i=l; i<=r; i++)
+        {
+            ll z = i%10;
+            if(z==2 || z==3 || z==9)
             {
-                ll z = i%10;
-                if(z==2 || z==3 || z==9)
-                {
-                    count++;
-                }
+                count++;
             }
-
-
-
+        }
         cout<<count<<endl;
-
     }
     return 0;
 }
