@@ -1,6 +1,8 @@
-//
+//Find the Frequency
+
 //"Bismillah Rahman Rahim"
 //{
+#include<iostream>
 #include <stddef.h>
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,27 +14,25 @@ using ll = long long;
 #define forn(i,n)  for(int i=0;i<n;i++)
 #define all(v)     v.begin(), v.end()
 #define rall(v)    v.rbegin(),v.rend()
-
-#define pb    push_back
-#define sz(a) (int)a.size()
+#define YES        cout << "YES\n"
+#define NO         cout << "NO\n"
+#define pb         push_back
+#define sz(a)      (int)a.size()
 //}
+
+
 int main()
 {
-    #ifndef a
-        freopen("input.txt","r",stdin);
-        freopen("output.txt","w"stdout);
+    int findFrequency(vector<int> arr, int x)
+    {
 
-    #endif
-
-
-    optimize();
-    ll a,b,count=0;
-    cin>>a>>b;
-    if(a%b==0){
-              cout<<(a/b)<<endl;
+        map<int,int> m;
+        for (int a : arr)
+        {
+            m[a]++;
+        }
+        return m[x];
     }
-    else{
-         cout<<(a/b)+1<<endl;
-    }
+
     return 0;
 }
